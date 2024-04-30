@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import React, { useState } from "react";
 import ColorThief from "colorthief";
 import Header from "./components/Header";
 import DisplayImage from "./components/DisplayImage";

@@ -13,7 +13,7 @@ const Header = ({uploadImage}: {uploadImage: UploadImageFunction}) => {
           <input type="file" id="file" accept="image/*" hidden onChange={uploadImage} />
         </div>
       </header>  
-   )
+    )
 }
 
 export default Header;

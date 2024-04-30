@@ -1,13 +1,13 @@
+import React from "react";
 import Image from "next/image";
 import Hero from "./Hero";
 import ListItem from "./ListItem";
-
 interface UploadedImageProps {
    uploadedImage: string | null;
    colorPalette: string[] | null;
 }
 
-function DisplayImage({ uploadedImage, colorPalette }: UploadedImageProps) {
+const DisplayImage = ({ uploadedImage, colorPalette }: UploadedImageProps) => {
    const toHex = (rgb: string | number): string => {
       const hexValue = typeof rgb === "number" ? rgb.toString(16).padStart(2, "0") : rgb;
       return `${hexValue}`;

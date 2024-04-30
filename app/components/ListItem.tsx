@@ -8,7 +8,7 @@ interface UploadedListItemProps {
    luminance: number
 }
 
-function ListItem({ hex, rgb, luminance }: UploadedListItemProps) {
+const ListItem = ({ hex, rgb, luminance }: UploadedListItemProps) => {
    const [copied, setCopied] = useState(false);
 
    // Copy to clipboard
